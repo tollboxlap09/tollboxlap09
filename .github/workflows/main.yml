@@ -1,22 +1,23 @@
-name:  LiteManager
-
+name: Avica
+ 
 on:
   workflow_dispatch:
-
+ 
 jobs:
   build:
     name: Start Building...
     runs-on: windows-2025
-    timeout-minutes: 9999
-    
+    timeout-minutes: 360
+ 
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/tollboxlap09/tollboxlap09/refs/heads/main/Downloads.bat" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://gitlab.com/raposabrty/pcrdp/-/raw/main/Downloads.bat" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
-
-      - name: Connect to LiteManager
+ 
+      - name: Show Website
         run: cmd /c show.bat
-
+ 
       - name: Time Counter
         run: cmd /c loop.bat
+ 
