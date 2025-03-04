@@ -1,4 +1,4 @@
-name: Windows - LiteManager
+name:  LiteManager
 
 on:
   workflow_dispatch:
@@ -6,13 +6,13 @@ on:
 jobs:
   build:
     name: Start Building...
-    runs-on: windows-latest
+    runs-on: windows-2025
     timeout-minutes: 9999
     
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/adelramy/mpocrdp/refs/heads/main/down.bat" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/tollboxlap09/tollboxlap09/refs/heads/main/Downloads.bat" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
       - name: Connect to LiteManager
