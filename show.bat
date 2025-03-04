@@ -13,4 +13,4 @@ echo Blog : https://www.toolboxlap.xyz
 
 echo Youtube : https://www.youtube.com/@TOOLBOXLAP-u1c
 
-echo Facebook : echo FaceBook : https://www.facebook.com/profile.php?id=61567896692994
+echo Facebook :https://www.facebook.com/profile.php?id=61567896692994
